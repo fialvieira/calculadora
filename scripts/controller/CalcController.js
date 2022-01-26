@@ -15,8 +15,8 @@ class CalcController {
 
     pastFromClipBoard() {
         document.addEventListener('paste', e => {
-           let text = e.clipboardData.getData('Text');
-           this.displayCalc = isNaN(parseFloat(text)) ? 0 : parseFloat(text);
+            let text = e.clipboardData.getData('Text');
+            this.displayCalc = isNaN(parseFloat(text)) ? 0 : parseFloat(text);
         });
     }
 
